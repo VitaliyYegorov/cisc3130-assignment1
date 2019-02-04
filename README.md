@@ -9,7 +9,7 @@ Read a text file (one word per line) and output information about whether the wo
 1. `isUniqueChar()` function determines if a string has all unique characters, complete this function.
 2. Edit the `sortWord()` function so that uses the InsertionSort() function to convert all letters to lowercase and print out the sorted characters for the word.
 
-Assume these functions will be called from the main function. To get you started you can use these two files as a starting point. Instructions for usage can be found in the [Example.java](Example.java).
+Assume these functions will be called from the main function. To get you started you can use these two files as a starting point. Note that there are errors in the file that you'll have to fix to complete the assignment. Instructions for usage can be found in the [Example.java](Example.java).
 
 You may use [input.txt](input.txt) as a test case. The contents of the input.txt file:
 
@@ -21,11 +21,12 @@ College
 ```
 
 The output should look like: 
+
 ```
-false
-ehllo
-true
-dlorw
+false	ehllo
+true	dlorw
+false	bklnoory
+false	ceegllo
 ```
 
 
