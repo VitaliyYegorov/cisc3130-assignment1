@@ -6,14 +6,20 @@ Brooklyn College
 
 
 ## Objective
-Read a text file (one word per line) and output information about whether the word is composed of unique characters and then output each word in its sorted order. 
+Read a text file (one word per line) and output information about whether the word is composed of unique characters and then output each word in its sorted order. From here on, *function* and *method* are used interchangeably to indicate a code block that has input and output.
 
 1. `isUniqueChar()` function determines if a string has all unique characters, complete this function.
 2. Edit the `sortWord()` function so that uses the InsertionSort() function to convert all letters to lowercase and print out the sorted characters for the word.
 
 Assume these functions will be called from the main function and return per line the output of each.  To get you started you can use these two files as a starting point. Note that there are errors in the file that you'll have to fix in order to complete the assignment, how you fix it will be up to your personal preference. 
 
-Furthermore, the exact design of how your functions will take input parameters and the types of your inputs & outputs is up to you to decide - you may find it useful to write out pseudocode to design a strategy of how your code will work before beginning the actual coding task. You may even change the name of the functions if you like, I will be checking your output format. Feel free to discus with classmates about strategies and design but do try to write your own code to maximize your learning opportunity. 
+Furthermore, the exact design of how your functions will take input parameters and the types of your inputs & outputs is up to you to decide. For example, perhaps you prefer to print from each function instead of passing values back. Perhaps you prefer working with Character inputs instead of String. These are decisions you should think about and how it can affect other parts of the code.
+
+You may find it useful to write out pseudocode to design a strategy of how your code will work before beginning the actual coding task. You may even change the name of the functions if you like, I will be checking your output format. Feel free to discus with classmates about strategies and design but do try to write your own code to maximize your learning opportunity. 
+
+There is some artistic aspect to programming; this assignment is designed so that there's no one single right answer to complete the objective. Do use analytical thinking to assess whether your strategy and design are effective, if your code can be further improved. 
+
+---
 
 You can reference the [Java Docs](https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html) or anything on the Internet. 
 
@@ -36,21 +42,25 @@ true	dlorw
 false	bklnoory
 false	ceegllo
 ```
+#### Format
 
 In each line you have the `true/false` value followed by a tab space, followed by the word in sorted order (lowercase).
+
+---
 
 ## Questions/Issues
 
 Feel free to use the issue tracker for this repository ([link](https://github.com/DataMascara/cisc3130-assignment1/issues)). 
 
 ## Submission
-Submit via the GitHub Classroom link ([https://classroom.github.com/a/q0roF8ir](https://classroom.github.com/a/q0roF8ir). 
+If possible, submit the completed work via the GitHub Classroom link ([https://classroom.github.com/a/q0roF8ir](https://classroom.github.com/a/q0roF8ir). Use of this platform is quite experimental, so it may or may not work. In the case that Github Classroom doesn't work, or you choose not to use Github - you can email me the Java source code before the deadline.  
 
 You should submit the `*.java` file. Please comment with your first and last name somewhere in that file so I can identify you for grading. 
 
 ## Grading
 I will be looking for the following characteristics amongst other critera:
 
-* That it works. That the Java file submitted compiles and gives an output. Should be expected output. You are welcome to attach an example of input and output for me to refer to that it works for your test case(s), however I will be using my own test case with lowercase alpha characters and numbers.
+* That it works. That the Java file submitted compiles and gives an output. Should be following the expected output format. You are welcome to attach an example of input and output for me to refer to that it works for your test case(s), however I will be using my own test case with lowercase alpha characters and numbers.
 * Commenting of your code - describe the function, expected inputs, any error or exception handling. 
 * Readability is important, so is the impression you want to give on your code. Try to use good principles of naming, use of comments, spacing, etc.
+* I'll try to compile the source code with command-line, so if there's another way to compile and run do let me know.
