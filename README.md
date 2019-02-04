@@ -9,13 +9,13 @@ Brooklyn College
 Read a text file (one word per line) and output information about whether the word is composed of unique characters and then output each word in its sorted order. From here on, *function* and *method* are used interchangeably to indicate a code block that has input and output.
 
 1. `isUniqueChar()` function determines if a string has all unique characters, complete this function.
-2. Edit the `sortWord()` function so that uses the InsertionSort() function to convert all letters to lowercase and print out the sorted characters for the word.
+2. Edit the `sortWord()` function so that uses the InsertionSort() function to convert all letters to lowercase and print out the sorted characters for the word. 
 
 Assume these functions will be called from the main function and return per line the output of each.  To get you started you can use these two files as a starting point. Note that there are errors in the file that you'll have to fix in order to complete the assignment, how you fix it will be up to your personal preference. 
 
 Furthermore, the exact design of how your functions will take input parameters and the types of your inputs & outputs is up to you to decide. For example, perhaps you prefer to print from each function instead of passing values back. Perhaps you prefer working with Character inputs instead of String. These are decisions you should think about and how it can affect other parts of the code.
 
-You may find it useful to write out pseudocode to design a strategy of how your code will work before beginning the actual coding task. You may even change the name of the functions if you like, I will be checking your output format. Feel free to discus with classmates about strategies and design but do try to write your own code to maximize your learning opportunity. 
+You may find it useful to write out pseudocode to design a strategy of how your code will work before beginning the actual coding task. You may even change the name of the functions if you like. You have the freedom to design your program. I will be checking your output format first and foremost so try to keep that consistent. Feel free to discus with classmates about strategies and design but do try to write your own code to maximize your learning opportunity. 
 
 There is some artistic aspect to programming; this assignment is designed so that there's no one single right answer to complete the objective. Do use analytical thinking to assess whether your strategy and design are effective, if your code can be further improved. 
 
