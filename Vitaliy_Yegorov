@@ -1,0 +1,106 @@
+//
+//  ReadAndSort.java
+
+import java.util.Scanner;
+import java.util.*;
+import java.io.IOException;
+
+public class SortInput {
+    
+   
+    private static boolean isUniqueChar(String s){
+        // Fill this part out
+        String str = s.toLowerCase();    // makes all elements of string to lower case
+        
+        char []ch = str.toCharArray();   // inserting the elements of the string into char array
+        
+        // Printing char array
+        for(int i=0; i<ch.length; i++)
+            System.out.print(" "+ch[i]+ " ");
+        System.out.print("\n");
+        int i=0;
+        int j=0;
+        
+        // running throuh array looking for identical char using linier seach
+        char searchKey=' ';
+        int numEl = ch.length;
+        while(i < numEl){
+            searchKey=ch[i];
+            for(j=i+1; j < numEl; j++){
+                if(searchKey == ch[j])
+                break;
+                }
+                if(j!=numEl)
+                    break;
+            i++;
+            }
+        // printing the result if identical char is not found
+        if (i == numEl){
+            System.out.println("false");
+            System.out.println("Equel char is not found");
+            return false;}
+        // printing the result if identical char is found
+        else{
+            System.out.println("true");
+            System.out.println("Equel char is found");
+            return true;}
+    }
+    // method calls the sorting method to sort inserted string
+    private static String sortWord(String s){
+        String str = s.toLowerCase();
+        char[] a = str.toCharArray();
+        insertionSort(a);
+        return "";
+    }
+    
+    // method sorts elements of the char array by value following the alphabet using insertion sort
+    public static void insertionSort(char[] arr) {
+         int numEl = arr.length;
+        if (numEl == 0)
+            return;
+        for (int i=1; i < numEl; i++) {
+            char temp = arr[i];
+            int j = i-1;
+            while(j >=0 && arr[j] > temp){
+                arr[j+1] = arr [j];
+                j--;
+            }
+            arr[j+1] = temp;
+                    }
+        for(int i=0; i < arr.length; i++)
+            System.out.print(" " + arr[i] + " ");
+        System.out.println("\n");
+        return ;
+    }
+    
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a word ");      //  asking to enter the string
+        
+        // read in words and determine whether it is composed of unique characters
+    
+       
+        while (scanner.hasNextLine()) {
+           
+            String s = scanner.nextLine();
+            
+            // catching exceptions including empty space
+             try{
+                 if(s.isEmpty())
+                     throw new IOException("no blanks");
+                } catch (IOException e) {
+                      System.out.println(e.toString());}
+                  catch (NumberFormatException e) {
+                      e.printStackTrace();}
+        
+            isUniqueChar(s);  // implimentation of the method, which searches identical char
+            sortWord(s);      // implimentation of the method, which sorts the the entered string from consol
+            
+            System.out.println("Enter a word ");   //   asking to enter the string again
+            
+        }
+     scanner.close();
+         
+    }
+}
